@@ -4,12 +4,14 @@
   <meta charset="UTF-8">
   <title>#QA Test Page</title>
 
-<script>
-    window.UC_UI_DOMAINS = {
-        crossDomainConsentSharingIFrame: 'https://marriccc.github.io/cross-domain-bridge.html',
-    };
-</script>
-<script id="usercentrics-cmp" src="https://web.cmp.usercentrics-sandbox.eu/ui/pr/690/loader.js" data-sandbox="true" data-settings-id="tRtdLgYgbmdT8F" async></script>
+ <script>
+window.addEventListener("onUcImprintClick", function(e){
+  console.log("Custom Imprint Link Clicked!!")
+});
+  </script>
+
+<script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="59ALCK1up-Knfu" async></script>
+
   
 
 
